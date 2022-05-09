@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi"/>
+    <title>통합 시작 페이지</title>
+    <link href="./img/favicon_logo.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="./web/font/NotoSansKR.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <style type="text/css">
+        html,
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #wrap {
+            position: relative;
+            max-width: 360px;
+            max-height: 550px;
+            width: 100%;
+            height: 100%;
+            background: rgb(255, 255, 255);
+        }
+
+        #logoArea {
+            margin-top: 170px;
+            text-align: center;
+            visibility: hidden;
+        }
+
+        #mainlogo {
+            width: 158px;
+            margin-bottom: 172px;
+        }
+
+        #sublogo {
+            width: 83px;
+        }
+
+        #buttonArea {
+            position: absolute;
+            top: 20%;
+            text-align: center;
+        }
+
+        #buttonArea > button {
+            width: 200px;
+            height: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Noto Sans KR Light';
+            font-size: 20px;
+            color: #ffffff;
+            background: #44413c;
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div id="wrap">
+        <div id="logoArea" class="animation-element">
+            <img id="mainlogo" src="./img/logo_BucheonXSoom.png" alt="문화도시부천X숨티커">
+            <br><img id="sublogo" src="./img/logo_Bucheon.png" alt="부천문화재단">
+        </div>
+        <div id="buttonArea">
+            <button id="record">1. 첫 태그 시나리오</button>
+            <button id="play">2. 녹음 이후 시나리오</button>
+            <!--<button id="wrong">3. 코드오류 시나리오</button>
+            <button id="notice">4. 서버점검 시나리오</button>-->
+        </div>
+        
+    </div>
+    <script>
+        document.querySelector('#record').onclick = function() {
+            document.all.buttonArea.style.visibility="hidden";
+            setTimeout(function() {
+                const element = document.querySelector('.animation-element');
+                document.all.logoArea.style.visibility="visible";
+                element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
+                element.addEventListener('animationend', () => {
+                    location.href='./tutorial.html';
+                });
+            }, 1000);
+        };
+        document.querySelector('#play').onclick = function() {
+            document.all.buttonArea.style.visibility="hidden";
+            setTimeout(function() {
+                const element = document.querySelector('.animation-element');
+                document.all.logoArea.style.visibility="visible";
+                element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
+                element.addEventListener('animationend', () => {
+                    location.href='./play.html';
+                });
+            }, 1000);
+        };
+        document.querySelector('#wrong').onclick = function() {
+            document.all.buttonArea.style.visibility="hidden";
+            setTimeout(function() {
+                const element = document.querySelector('.animation-element');
+                document.all.logoArea.style.visibility="visible";
+                element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
+                element.addEventListener('animationend', () => {
+                    location.href='./contact.html';
+                });
+            }, 1000);
+        };
+        document.querySelector('#notice').onclick = function() {
+            document.all.buttonArea.style.visibility="hidden";
+            setTimeout(function() {
+                const element = document.querySelector('.animation-element');
+                document.all.logoArea.style.visibility="visible";
+                element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
+
+                element.addEventListener('animationend', () => {
+                    location.href='./notice.html';
+                });
+            }, 1000);
+        };
+    </script>
+</body>
+</html>
