@@ -1,0 +1,132 @@
+:root {
+    --animate-duration: 0.2s;
+}
+
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#backGround {
+    position: absolute;
+    width: 100%; 
+    height: 100%;
+    margin: 0%;
+    z-index: 2; 
+    opacity: 0.7;
+    background-color: black;
+    visibility: hidden;
+}
+
+#wrap {
+    position: relative;
+    max-width: 360px;
+    max-height: 550px;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    overflow: visible;
+}
+
+#topbtn {
+    position: absolute;
+    top: 14px;
+    left: 18px;
+    width: 78px;
+    height: 29px;
+    text-align: center;
+    font-family: 'Noto Sans KR Regular';
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+    background-color: #F5F5F5;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 35px;
+    z-index: 999;
+}
+
+#topcontainer {
+    position: absolute;
+    top: 58px;
+    left: 18px;
+    width: 296px;
+    height: 98px;
+    background: url("../img/playnature_main.png");
+    background-size: cover;
+    border-radius: 15px;
+    text-align: right;
+    padding-right: 28px;
+}
+
+
+#topcontainer > h1 {
+    font-family: 'Noto Sans KR Bold';
+    font-size: 16px;
+    line-height: 23px;
+    color: #000000;
+}
+
+#topcontainer > p {
+    font-family: 'Noto Sans KR Regular';
+    font-size: 12px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.container {
+    position: absolute;
+    left: 21px;
+    width: 321px;
+    height: 70px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.container > img {
+    width: 65px;
+}
+
+.container > p {
+    position: absolute;
+    left: 81px;
+    font-family: 'Noto Sans KR Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+}
+
+.container > button {
+    position: absolute;
+    right: 0px;
+    width: 38px;
+    padding: 0%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+}.container > button > img { margin: 0%; width: 100%;}
+
+#container1 { top: 170px; }
+#container2 { top: 247px; }
+#container3 { top: 324px; }
+#container4 { top: 401px; }
+
+#playbtn1, #playbtn2, #playbtn3, #playbtn4 { visibility: visible; }
+#stopbtn1, #stopbtn2, #stopbtn3, #stopbtn4 { visibility: hidden; }
+
+
+
+
+
+#sublogo {
+    position: absolute;
+    bottom: 30px;
+    right: 18px;
+    width: 114px;
+    height: 34px;
+}
