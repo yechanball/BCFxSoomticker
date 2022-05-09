@@ -1,0 +1,34 @@
+html,
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+#wrap {
+    position: relative;
+    max-width: 360px;
+    max-height: 550px;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+}
+
+#logoArea {
+    margin-top: 170px;
+    text-align: center;
+    visibility: hidden;
+}
+
+#mainlogo {
+    width: 158px;
+    margin-bottom: 172px;
+}
+
+#sublogo {
+    width: 83px;
+}
