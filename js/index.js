@@ -9,7 +9,7 @@ window.onload = function() {
         element.classList.add('animate__animated', 'animate__fadeIn', 'animate__slow');
 
         element.addEventListener('animationend', () => {
-            location.href='./main.html?code='+code;
+            location.href='./tutorial.html?code='+code;
         });
     }, 1000);
 };
