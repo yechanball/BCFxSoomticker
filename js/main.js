@@ -180,7 +180,7 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
             document.all.dragdirection.style.visibility = "hidden";
             document.all.dragposition.style.visibility = "hidden";
             document.all.deletebuttonIcon.style.visibility = "hidden";
-            document.all.topbtn.style.visibility = "hidden";
+            //document.all.topbtn.style.visibility = "hidden";
 
             document.all.playbutton.style.visibility = "hidden";
             document.all.swiperDiv.style.visibility = "hidden";
@@ -204,7 +204,7 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
             document.all.dragdirection.style.visibility = "visible";
             document.all.dragposition.style.visibility = "visible";
             document.all.deletebuttonIcon.style.visibility = "visible";
-            document.all.topbtn.style.visibility = "visible";
+            //document.all.topbtn.style.visibility = "visible";
 
             document.all.playbutton.style.visibility = "visible";
             document.all.swiperDiv.style.visibility = "visible";
@@ -248,7 +248,7 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
             document.all.dragdirection.style.visibility = "visible";
             document.all.dragposition.style.visibility = "visible";
             document.all.deletebuttonIcon.style.visibility = "visible";
-            document.all.topbtn.style.visibility = "visible";
+            //document.all.topbtn.style.visibility = "visible";
 
             document.all.playbutton.style.visibility = "visible";
             document.all.pausebutton.style.visibility = "hidden";
@@ -366,11 +366,10 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
         document.all.deletebuttonIcon.style.visibility = "hidden";
         document.all.dragdirection.style.visibility = "hidden";
         document.all.dragposition.style.visibility = "hidden";
-        document.all.topbtn.style.visibility = "hidden";
         document.all.waterdrop.style.visibility = "visible";
+        document.all.topbtn.style.visibility = "visible";
         document.all.uploadbutton.style.visibility = "visible";
         document.all.recordbutton.style.visibility = "visible";
-        document.all.topbtn.style.visibility = "visible";
         document.all.stopbutton.style.visibility = "hidden";
         document.all.timer.style.visibility = "hidden";
         document.all.swiperDiv.style.visibility = "hidden";
@@ -395,7 +394,7 @@ function switchingPage() {
     setTimeout(function () {
         document.all.waterdrop.style.visibility = "hidden";
         document.all.waterdrop.src = "./img/waterdrop_blank.png";
-        document.all.topbtn.style.visibility = "visible";
+        //document.all.topbtn.style.visibility = "visible";
         document.all.timer.style.visibility = "visible"
         document.all.deletebuttonIcon.style.visibility = "visible";
         document.all.swiperDiv.style.visibility = "visible";
@@ -462,7 +461,6 @@ stopButton.addEventListener("click", stopRecording);
 
 function startRecording() {
     console.log("recordButton clicked");
-    document.all.topbtn.style.visibility = "hidden";
     ($("#timer")).html("00:00");
 
     //var constraints = { audio: true, video: false };
@@ -496,6 +494,7 @@ function startRecording() {
         recordTime = 1;
 
         document.all.waterdrop.src = "./img/record_start.gif";
+        document.all.topbtn.style.visibility = "hidden";
         document.all.uploadbutton.style.visibility = "hidden";
         document.all.recordbutton.style.visibility = "hidden";
         document.all.timer.style.visibility = "visible";
