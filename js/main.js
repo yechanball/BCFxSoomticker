@@ -343,7 +343,7 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
                 console.log("upload done");
                 location.href='./uploadDone.html';
             }, 100);
-        }, 1700);
+        }, 1717);
         //////////////////////////////////////////////
     }
 
@@ -421,17 +421,17 @@ function tempUpload() {
     document.all.uploadbutton.style.visibility = "hidden";
     document.all.recordbutton.style.visibility = "hidden";
 
-    switchingPage();
-
     var audioFile = document.getElementById('audio_file').files[0];
 
     if (isAudio(audioFile.name)) {
         console.log("collect Audio File input!");
     } else {
         console.log("It is not Audio File! Page reload!");
-        alert("잘못된 파일 형식입니다.");
+        alert("숨티커에는 오디오 파일만 저장할 수 있어요");
         location.reload();
     }
+
+    switchingPage();
 
     const audioURL = window.URL.createObjectURL(audioFile);
     document.getElementById("tempUploadForm").reset();

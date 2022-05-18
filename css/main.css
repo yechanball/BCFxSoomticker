@@ -294,6 +294,28 @@ body {
     visibility: hidden;
 }
 
+#filebox > p {
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    width: 250px;
+    height: 42px;
+    font-family: 'Noto Sans KR Bold';
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #F1B85A;
+}
+
+#filebox > img {
+    position: absolute;
+    top: 10px;
+    left: 233px;
+    width: 12.11px;
+    height: 35.36px;
+    transform: matrix(0.41, -0.91, -0.91, -0.41, 0, 0);
+}
+
 .fileboxInner {
     position: absolute;
     top: 41px;
