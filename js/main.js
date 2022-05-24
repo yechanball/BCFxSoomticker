@@ -334,8 +334,10 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
         var upProgress = 0;
         var UploadProgress = setInterval(function () {
             ($("#uploadProgress")).html(upProgress + "%");
-            upProgress++;
-        }, 17);
+            if(upProgress<100){
+                upProgress++;
+            }
+        }, 14);
 
         setTimeout(function () {
             clearInterval(UploadProgress);
@@ -343,7 +345,7 @@ function audioManipulation(audioURL, uploadMode, recordTime) {
                 console.log("upload done");
                 location.href='./uploadDone.html';
             }, 100);
-        }, 1717);
+        }, 1700);
         //////////////////////////////////////////////
     }
 
