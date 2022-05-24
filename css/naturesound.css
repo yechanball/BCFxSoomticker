@@ -85,6 +85,8 @@ body {
     left: 21px;
     width: 321px;
     height: 70px;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
     display: inline-flex;
     align-items: center;
 }
@@ -118,10 +120,6 @@ body {
 
 #playbtn1, #playbtn2, #playbtn3, #playbtn4 { visibility: visible; }
 #stopbtn1, #stopbtn2, #stopbtn3, #stopbtn4 { visibility: hidden; }
-
-
-
-
 
 #sublogo {
     position: absolute;
