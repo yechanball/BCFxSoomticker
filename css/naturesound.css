@@ -85,9 +85,7 @@ body {
     left: 21px;
     width: 321px;
     height: 70px;
-    display: -webkit-inline-flex;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    display: grid;
     align-items: center;
 }
 
