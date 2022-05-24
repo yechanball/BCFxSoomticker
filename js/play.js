@@ -33,7 +33,7 @@ audio.controls = false;
 const audioURL = "./sound/sample.m4a"; //임시로 설정한 오디오 파일
 audio.src = audioURL;
 link.href = audioURL;
-link.download = "문화도시부천_숨티커_녹음.mp3";
+link.download = "문화도시부천_숨티커_녹음";
 
 // Play
 playbutton.onclick = function (e) {
