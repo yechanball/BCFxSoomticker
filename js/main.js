@@ -466,21 +466,11 @@ function startRecording() {
     ($("#timer")).html("00:00");
 
     //var constraints = { audio: true, video: false };
-    /*var constraints = {  "audio": { "mandatory": {
+    var constraints = {  "audio": { "mandatory": {
                         "googEchoCancellation": "true",
                         "googAutoGainControl": "true",
                         "googNoiseSuppression": "true",
-                        "googHighpassFilter": "true"}, "optional": []}};*/
-    var constraints = {  audio: {
-                            autoGainControl: false,
-                            channelCount: 2,
-                            echoCancellation: false,
-                            latency: 0,
-                            noiseSuppression: false,
-                            sampleRate: 48000,
-                            sampleSize: 16,
-                            volume: 1.0
-                        }};
+                        "googHighpassFilter": "true"}, "optional": []}};
 
     recordButton.disabled = true;
     stopButton.disabled = false;
